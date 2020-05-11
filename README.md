@@ -16,3 +16,6 @@
 
 ### Order files by date (old -> new)
 ```ls -tr | xargs grep string```
+
+## How to transfer files over SSH
+```scp /home/myuser/folder/file.ext user@myserver.com:/myserver/tmp/name_for_file.ext```
