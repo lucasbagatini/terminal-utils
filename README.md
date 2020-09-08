@@ -14,6 +14,9 @@
 ### Matching files
 ```grep -l string *```
 
+### Multiple strings
+```grep '208302030\|208302031\|208302032\|208302033\|208302034\|208302035\|208302036\|208302037\|208302038' *.csv```
+
 ### Order files by date (old -> new)
 ```ls -tr | xargs grep string```
 
