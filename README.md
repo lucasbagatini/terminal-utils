@@ -22,3 +22,6 @@
 
 ## How to transfer files over SSH
 ```scp /home/myuser/folder/file.ext user@myserver.com:/myserver/tmp/name_for_file.ext```
+
+## How to append the output of a command to the end of a file
+```command &>> output.txt```
