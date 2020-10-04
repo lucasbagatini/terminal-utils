@@ -30,6 +30,8 @@
 ```docker cp container_name:/path/to/container/folder /path/to/external/dir```
 
 ## How to use mysqldump inside docker container
-```docker exec -it container_name mysqldump -u root --password=123456 schema_name --fields-terminated-by ',' \
---fields-enclosed-by '"' --fields-escaped-by '\' \
---no-create-info --tab /var/lib/mysq-files/```
+```
+docker exec -it container_name mysqldump -u root --password=123456 schema_name --fields-terminated-by ',' /
+--fields-enclosed-by '"' --fields-escaped-by '\' /
+--no-create-info --tab /var/lib/mysq-files/
+```
