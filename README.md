@@ -35,3 +35,6 @@ docker exec -it container_name mysqldump -u root --password=123456 schema_name -
 --fields-enclosed-by '"' --fields-escaped-by '\' /
 --no-create-info --tab /var/lib/mysq-files/
 ```
+
+## How to copy multiple times the content from one file to another 
+```for i in {1..25}; do cat 02122020_log.csv >> 02122020_log_huge.csv; done```
