@@ -17,6 +17,8 @@
 ### Multiple strings
 ```grep '208302030\|208302031\|208302032\|208302033\|208302034\|208302035\|208302036\|208302037\|208302038' *.csv```
 
+---
+
 ## Order files by date (old -> new)
 ```ls -tr | xargs grep string```
 
@@ -38,3 +40,6 @@ docker exec -it container_name mysqldump -u root --password=123456 schema_name -
 
 ## How to copy multiple times the content from one file to another 
 ```for i in {1..25}; do cat 02122020_log.csv >> 02122020_log_huge.csv; done```
+
+## Stop asking for passphrase for given key
+```ssh-add /Users/my_user/.ssh/id_ed25519```
