@@ -43,3 +43,7 @@ docker exec -it container_name mysqldump -u root --password=123456 schema_name -
 
 ## Stop asking for passphrase for given key
 ```ssh-add /Users/my_user/.ssh/id_ed25519```
+
+## How to stop a process by port number
+```kill -9 $(lsof -t -i tcp:8080)```
+
